@@ -44,6 +44,7 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    artifactRules = "target => target"
     buildNumberPattern = "netology-tc.%build.counter%"
     publishArtifacts = PublishMode.SUCCESSFUL
 
